@@ -11,92 +11,176 @@ void main() {
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    Color(0xFF051E22),
-                    Color(0xFF5a944D),
-                  ],
+                  colors: [Color(0xFF626262), Color(0xFFC5C5C5)],
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
                 ),
               ),
-              child: Column(
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(top: 150, right: 150),
-                    child: Text(
-                      "#051E22",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                  ),
-                  Container(
-                    height: 300,
-                    margin: EdgeInsets.all(30),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                        ),
-                      ],
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          Color(0xFF051E22),
-                          Color(0xFF5a944D),
-                        ],
-                      ),
-                    ),
-                    child: Expanded(
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 70,
-                            height: 70,
-                            margin: EdgeInsets.only(left: 200, top: 230),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey,
-                                ),
-                              ],
-                              gradient: LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                                colors: [
-                                  Color(0xFF051E22),
-                                  Color(0xFF5a944D),
-                                ],
+              child: Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(top: 20),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(top: 15, left: 140, right: 100),
+                        child: Row(
+                          children: [
+                            Container(
+                              child: Text(
+                                "#364649",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               ),
                             ),
-                            child: Container(
-                              margin: EdgeInsets.all(5),
+                            Container(
+                              margin: EdgeInsets.only(left: 20),
+                              width: 30,
+                              height: 30,
                               decoration: BoxDecoration(
-                                border: Border.all(width: 3, color: Colors.white),
                                 shape: BoxShape.circle,
-                              ),
-                              child: Container(
-                                child: Text(
-                                  "140º",
-                                  style: TextStyle(color: Colors.white, fontSize: 18),
-                                ),
-                                margin: EdgeInsets.only(top: 18,left: 10),
+                                color: Color(0xFF364649),
+                                boxShadow:[BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 10,
+                                )],
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
+                      Container(
+                        margin: EdgeInsets.only(left: 120, right: 120, top: 15),
+                        height: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(30)),
+                          gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [Color(0xFF364649), Color(0xFF708F96)],
+                          ),
+                          boxShadow:[BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10,
+                          )],
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 15, left: 120, right: 130),
+                        child: Row(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(right: 20),
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(0xFF708F96),
+                                boxShadow:[BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 10,
+                                )],
+                              ),
+                            ),
+                            Container(
+                              child: Text(
+                                "#708F96",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(left: 120, right: 120, top: 15),
+                        height: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(30)),
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [Color(0xFF708F96), Color(0xFFAA895F)],
+                          ),
+                          boxShadow:[BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10,
+                          )],
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 15, left: 140, right: 100),
+                        child: Row(
+                          children: [
+                            Container(
+                              child: Text(
+                                "#AA895F",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 20),
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(0xFFAA895F),
+                                boxShadow:[BoxShadow(
+                                  color: Colors.black,
+                                  blurRadius: 10,
+                                )],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(left: 120, right: 120, top: 15),
+                        height: 150,
+                        decoration: BoxDecoration(
+                          boxShadow:[BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10,
+                          )],
+                          borderRadius: BorderRadius.all(Radius.circular(30)),
+                          gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [Color(0xFFAA895F), Color(0xFFE0D8CC)],
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 15, left: 120, right: 130),
+                        child: Row(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(right: 20),
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xFFE0D8CC),
+                                  boxShadow:[BoxShadow(
+                                    color: Colors.black,
+                                    blurRadius: 10,
+                                  )],
+                              ),
+                            ),
+                            Container(
+                              child: Text(
+                                "#E0D8CC",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
+                              ),
+
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  Container(
-                    margin: EdgeInsets.only(bottom: 30, left: 200),
-                    child: Text(
-                      "#5a944D",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ),
